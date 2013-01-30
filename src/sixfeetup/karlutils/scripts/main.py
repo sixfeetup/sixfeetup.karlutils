@@ -46,7 +46,7 @@ def main(argv=sys.argv, out=None):
 
     subparsers = parser.add_subparsers(
         title='command', help='Available commands.')
-    eps = [ep for ep in pkg_resources.iter_entry_points('iwlearn.scripts')]
+    eps = [ep for ep in pkg_resources.iter_entry_points('sixfeetup.karlutils.scripts')]
     eps.sort(key=lambda ep: ep.name)
     ep_names = set()
     for ep in eps:
